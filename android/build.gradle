@@ -3,7 +3,7 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     ext.kotlin_version = '1.6.21'
-    ext.twilio_video_version = '5.12.+'
+    ext.twilio_video_version = '5.7.0'
     repositories {
         google()
         mavenCentral()
@@ -55,8 +55,8 @@ dependencies {
     implementation "com.twilio:video-android:$twilio_video_version"
 }
 
-configurations.all {
-    resolutionStrategy {
-        force 'com.getkeepsafe.relinker:relinker:1.4.5'
-    }
-}
+// configurations.all {
+//     resolutionStrategy {
+//         force 'com.getkeepsafe.relinker:relinker:1.4.5'
+//     }
+// }
